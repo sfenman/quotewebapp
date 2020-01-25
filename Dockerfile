@@ -10,7 +10,6 @@ RUN venv/bin/pip install -r requirements.txt
 RUN venv/bin/pip install gunicorn
 
 COPY app app
-COPY migrations migrations
 COPY quote.py config.py start.sh ./
 RUN chmod +x start.sh
 
